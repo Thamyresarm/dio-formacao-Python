@@ -1,0 +1,2 @@
+#usado para passar as dependencias que devem ser instaladas com o nossoo pacote.
+

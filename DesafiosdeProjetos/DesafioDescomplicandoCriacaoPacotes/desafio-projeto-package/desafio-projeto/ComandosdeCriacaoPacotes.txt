@@ -1,0 +1,28 @@
+# Comandos de instalação
+python -m pip install --upgrade pip
+pip install wheel
+python -m pip install --user twine
+python -m pip install --user setuptools
+
+# Criando
+
+python setup.py sdist bdist_wheel
+
+# Publicando
+
+https://pypi.org/account/register/
+https://test.pypi.org/account/register/
+
+comando para publicar no teste: 
+
+python -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+
+pedirá usuário e senha.
+
+basta copiar o link disponibilizado no site para instalar.
+
+comando para publicar e produção: 
+
+python -m twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
+
+pedirá usuário e senha.
